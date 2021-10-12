@@ -1,9 +1,27 @@
 import os, io
+from pathlib import Path
+
 from django.conf import settings
 from google.cloud import vision
 from gtts import gTTS
 
-# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] =  # 본인의 api 키 넣기
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+env_list = dict()
+
+local_env = open(os.path.join(BASE_DIR, '.env'))
+
+while True:
+    line = local_env.readline()
+    if not line:
+        break
+    line = line.replace('\n', '')
+    start = line.find('=')
+    key = line[:start]
+    value = line[start+1:]
+    env_list[key] = value
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = env_list['GOOGLE_API_KEY'] # 본인의 api 키 넣기
 
 def detect_text(path):
     base_url = settings.MEDIA_ROOT_URL + settings.MEDIA_URL

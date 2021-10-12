@@ -12,10 +12,10 @@
     </label>
     <input type="file" id="input_img" name="img_uploaded" accept="image/*" onchange="setThumbnail(event);">
     <!-- image preview -->
-    <div class="image_container" style="margin: 2rem;">
+    <div class="image_container" style="margin: .5rem;">
       Image upload ↑<br>
       Image preview ↓<br>
-      <img id="img_preview" style="margin: 2rem;">
+      <img id="img_preview" style="margin: .5rem;">
     </div>
 
     <script>
@@ -43,7 +43,7 @@
     </script>
 
     <!-- Predict -->
-    <p style="margin: 2rem;">선택한 이미지가 맞다면 예측을 시작해주세요!</p>
+    <p>선택한 이미지가 맞다면 예측을 시작해주세요!</p>
     <button class="submit_btn" type="submit"><img class="img_btn" src="{% static 'assets/images/robot.png' %}"></button>
   </div>
 </form>
