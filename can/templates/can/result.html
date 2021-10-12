@@ -12,7 +12,7 @@
   <!-- 이미지 이름, 확률값 출력 -->
   <div class="result_value">
     <p><h1>{{ result_name }}</h1></t><img id="img" src="{% static 'assets/images/loud-speaker.png' %}">
-    <p><a class="detect_link" href="{% url 'can:detect_text' file_name=uploaded_file_name %}">💚 원하시는 결과가 없다면 눌러주세요!</a></p>
+    <p><a class="detect_link" href="{% url 'can:detect_img_text' file_name=uploaded_file_name %}">💚 원하시는 결과가 없다면 눌러주세요!</a></p>
   </div>
 </div>
 
