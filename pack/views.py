@@ -2,7 +2,7 @@ import os
 
 from bokeh.embed import components
 from bokeh.models import Range1d
-from bokeh.plotting import figure, ColumnDataSource
+from bokeh.plotting import ColumnDataSource, figure
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render, redirect
@@ -11,12 +11,12 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 # image upload
-from can.predict import predict_image
-from can.visionAPI import detect_text
+from pack.predict import predict_image
+from pack.visionAPI import detect_text
 
 
 def img_upload(request):
-    return render(request, 'can/img_upload.html', {})
+    return render(request, 'pack/img_upload.html', {})
 
 # save image & predict
 def pred_img(request):
@@ -74,7 +74,7 @@ def pred_img(request):
                'div_rank': div_rank,
                'tts': tts}
 
-    return render(request, 'can/result.html', context)
+    return render(request, 'pack/result.html', context)
 
 # detecting text
 def detect_img_text(request, file_name):
@@ -88,7 +88,7 @@ def detect_img_text(request, file_name):
     'text_list': detected_text,
     'tts_2': tts_2}
 
-    return render(request, 'can/text_reader.html', context)
+    return render(request, 'pack/text_reader.html', context)
 
 
 # delete image

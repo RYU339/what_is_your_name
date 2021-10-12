@@ -2,9 +2,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
 
-from can import views
+from cup import views
 
-app_name = 'can'
+app_name = 'cup'
 
 urlpatterns = [
     path('img_upload/', views.img_upload, name='img_upload'),

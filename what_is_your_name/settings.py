@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'main',
     'can',
     'cup',
+    'pack',
 ]
 
 MIDDLEWARE = [
