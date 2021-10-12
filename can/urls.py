@@ -11,4 +11,4 @@ urlpatterns = [
     path('predict/', views.pred_img, name='pred_img'),
     path('detect_text/<str:file_name>/', views.detect_text, name='detect_text'),
     path('delete/<str:file_name>', views.delete, name='delete')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]

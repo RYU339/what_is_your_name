@@ -76,7 +76,7 @@ def detect_text(request, file_name):
 
     tts_2 = settings.MEDIA_URL + "text.mp3"
 
-    context = {'uploaded_file_url': settings.MEDIA_ROOT_URL+file_name,
+    context = {'uploaded_file_url': settings.MEDIA_URL+file_name,
     'uploaded_file_name': file_name,
     'text_list': detected_text,
     'tts_2': tts_2}
