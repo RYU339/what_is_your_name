@@ -1,0 +1,69 @@
+.wiyn_header_logo{
+    margin: 2.5rem 0; font-family: 'SCDream5', cursive;
+}
+
+.wiyn_header_button{
+    margin-bottom: 2rem;
+}
+
+.wiyn_footer_button{
+    margin-top: 2rem;
+}
+
+.wiyn_footer_logo{
+    margin: 2rem 0; font-family: 'SCDream3', cursive;
+}
+
+.mw-500{
+    max-width: 500px;
+    padding: 1rem 1.5rem;
+}
+
+.NNS_B{
+    font-family: 'NanumBarunGothicBold', cursive;
+}
+
+.round_button{
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 0 3px black;
+    border-radius: 20rem;
+    padding: .3rem;
+}
+
+.round_button:hover{
+    color: gray;
+}
+
+.article_content{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.article_image{
+    width: 60%;
+}
+
+.comment_box{
+    text-align: left;
+    border: solid;
+    border-color: bisque;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
