@@ -11,9 +11,10 @@
   </div>
   <!-- 이미지 이름, 확률값 출력 -->
   <div class="result_value">
-    <p><h1>{{ result_name }}</h1></t><img id="img" src="{% static 'images/loud-speaker.png' %}">
+    <p><h3>{{ result_name }}</h3></t><img id="img" src="{% static 'images/loud-speaker.png' %}">
     <p><a class="detect_link" href="{% url 'cup:detect_img_text' file_name=uploaded_file_name %}">
-        원하시는 결과가 없다면 눌러주세요</a></p>
+        원하시는 결과가 없다면 눌러주세요</a>
+    </p>
   </div>
 </div>
 
@@ -26,7 +27,8 @@
 <!-- 데이터 삭제 -->
 <div class="del_data">
   <a href="{% url 'cup:delete' file_name=uploaded_file_name %}" onclick='alert("데이터가 삭제되었습니다.");'>
-      <img class="img_btn" src="{% static 'images/garbage.png' %}"></a>
+      <img class="img_btn" src="{% static 'images/garbage.png' %}">
+  </a>
 </div>
 
 <script>

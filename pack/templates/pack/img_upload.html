@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block content %}
-
 <form action="{% url 'pack:pred_img' %}" method="POST" enctype="multipart/form-data"  onsubmit="return file_check()">
   {% csrf_token %}
   <div class="upload">
@@ -12,10 +11,10 @@
     </label>
     <input type="file" id="input_img" name="img_uploaded" accept="image/*" onchange="setThumbnail(event);">
     <!-- image preview -->
-    <div class="image_container" style="margin: .5rem;">
+    <div id="image_container">
       Image upload ↑<br>
       Image preview ↓<br>
-      <img id="img_preview" style="margin: .5rem;">
+      <img id="img_preview">
     </div>
 
     <script>
@@ -47,5 +46,4 @@
     <button class="submit_btn" type="submit"><img class="img_btn" src="{% static 'images/robot.png' %}"></button>
   </div>
 </form>
-
 {% endblock %}

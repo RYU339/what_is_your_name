@@ -7,7 +7,7 @@ from gtts import gTTS # google Text-To-Speech
 def predict_image(path):
     # load model
     base_url = settings.MEDIA_ROOT_URL + settings.MEDIA_URL # == './media/'
-    model_url = base_url + 'DL/keras_model.h5'
+    model_url = base_url + 'DL/PACK_Resnet152V2.h5'
     model = models.load_model(model_url, compile=False)
 
     # image resizing
