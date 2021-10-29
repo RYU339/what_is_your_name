@@ -7,7 +7,7 @@
   <div class="upload">
     <!-- image upload -->
     <label for="input_img">
-      <img class="img_btn" src="{% static 'images/image-gallery.png' %}">
+        <i class="material-icons">upload_file</i>
     </label>
     <input type="file" id="input_img" name="img_uploaded" accept="image/*" onchange="setThumbnail(event);">
     <!-- image preview -->
@@ -42,8 +42,8 @@
     </script>
 
     <!-- Predict -->
-    <p>선택한 이미지가 맞다면 예측을 시작하세요!</p>
-    <button class="submit_btn" type="submit"><img class="img_btn" src="{% static 'images/robot.png' %}"></button>
+    <p>선택한 이미지가 맞다면 로봇을 눌러주세요</p>
+    <button class="submit_btn" type="submit"><i class="material-icons">smart_toy</i></button>
   </div>
 </form>
 {% endblock %}

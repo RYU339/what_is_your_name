@@ -25,21 +25,21 @@ def predict_image(path):
     # image labeling
     '''
     0 almond
-    1 drinking_berrymix
-    2 drinking_plain
-    3 drinking_strawberry
-    4 honeymilk_choco
-    5 honeymilk_strawberry
+    1 drinking berrymix
+    2 drinking plain
+    3 drinking strawberry
+    4 honeymilk choco
+    5 honeymilk strawberry
     6 hush
     7 juicy
-    8 mae_il
-    9 seoul_choco
-    10 seoul_coffee
-    11 seoul_straw
+    8 mae il
+    9 seoul choco
+    10 seoul coffee
+    11 seoul strawberry
     '''
-    target_names = np.array(['almond', 'drinking_berrymix', 'drinking_plain', 'drinking_strawberry',
-                             'honeymilk_choco', 'honeymilk_strawberry', 'hush', 'juicy',
-                             'mae_il', 'seoul_choco', 'seoul_coffee', 'seoul_straw'])
+    target_names = np.array(['almond', 'drinking berrymix', 'drinking plain', 'drinking strawberry',
+                             'honeymilk choco', 'honeymilk strawberry', 'hush', 'juicy',
+                             'mae il', 'seoul choco', 'seoul coffee', 'seoul strawberry'])
     
     # get index number(max)
     result = np.argmax(model.predict(data))

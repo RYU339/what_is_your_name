@@ -24,21 +24,21 @@ def predict_image(path):
 
     # image labeling
     '''
-    0 bul_dak
-    1 cham_kkae
+    0 bul dak
+    1 cham kkae
     2 cheese
-    3 jin_hot
-    4 jin_sun
-    5 neo_gu_ri
-    6 sa_ri
-    7 sae_u_tang
+    3 jin hot
+    4 jin sun
+    5 neo gu ri
+    6 sa ri
+    7 sae u tang
     8 snack
-    9 woo_dong
+    9 woo dong
     10 yeul
-    11 yuk_gae_jang
+    11 yuk gae jang
     '''
-    target_names = np.array(['bul_dak', 'cham_kkae', 'cheese', 'jin_hot', 'jin_sun', 'neo_gu_ri',
-                             'sa_ri', 'sae_u_tang', 'snack', 'woo_dong', 'yeul', 'yuk_gae_jang'])
+    target_names = np.array(['bul dak', 'cham kkae', 'cheese', 'jin hot', 'jin sun', 'neo gu ri',
+                             'sa ri', 'sae u tang', 'snack', 'woo dong', 'yeul', 'yuk gae jang'])
     
     # get index number(max)
     result = np.argmax(model.predict(data))

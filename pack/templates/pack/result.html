@@ -11,9 +11,9 @@
   </div>
   <!-- 이미지 이름, 확률값 출력 -->
   <div class="result_value">
-    <p><h3>{{ result_name }}</h3></t><img id="img" src="{% static 'images/loud-speaker.png' %}">
+    <p><h3>{{ result_name }}</h3></t><i id="img" class="material-icons">campaign</i>
     <p><a class="detect_link" href="{% url 'pack:detect_img_text' file_name=uploaded_file_name %}">
-        원하시는 결과가 없다면 눌러주세요</a>
+        상품 정보 읽기</a>
     </p>
   </div>
 </div>
@@ -27,7 +27,7 @@
 <!-- 데이터 삭제 -->
 <div class="del_data">
   <a href="{% url 'pack:delete' file_name=uploaded_file_name %}" onclick='alert("데이터가 삭제되었습니다.");'>
-      <img class="img_btn" src="{% static 'images/garbage.png' %}">
+      <i class="material-icons">delete</i>
   </a>
 </div>
 

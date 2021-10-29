@@ -25,30 +25,14 @@ def predict_image(path):
     # image labeling
     '''
     0 budweiser
-    1 coca_cola
+    1 coca cola
     2 edelweiss
     3 filite
     4 guinness
     5 pepsi
-    6 welchs_grape
+    6 welchs grape
     '''
-    target_names = np.array(['budweiser', 'coca_cola', 'edelweiss', 'filite', 'guinness', 'pepsi', 'welchs_grape'])
-
-    # '''
-    # 0 guinness
-    # 1 terra
-    # 2 budweiser
-    # 3 sprite
-    # 4 edelweiss
-    # 5 coca-cola
-    # 6 filite
-    # 7 pepsi
-    # 8 welchs
-    # 9 bongbong
-    # 10 powerade
-    # '''
-    # target_names = np.array(['Guiness', 'Terra', 'Budweiser', 'Sprite', 'Edelweiss', 'Coca-cola',
-    #                          'Filite', 'Pepsi', 'Welchs', 'Grape bongbong', 'Powerade'])
+    target_names = np.array(['budweiser', 'coca cola', 'edelweiss', 'filite', 'guinness', 'pepsi', 'welchs grape'])
     
     # get index number(max)
     result = np.argmax(model.predict(data))

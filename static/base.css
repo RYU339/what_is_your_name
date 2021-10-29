@@ -279,8 +279,8 @@ body {
 }
 /* 오디오 이미지 */
 #img2 {
-    width: 5rem;
-    height: 5rem;
+    width: 1.5em;
+    height: 1.5em;
 }
 /* 읽어온 문자열 */
 .text_list {
@@ -298,3 +298,30 @@ body {
     height: 50px;
     padding: 15px;
 }
+
+/* meterial_icon */
+.material-icons {
+ font-family: 'Material Icons';
+ font-weight: normal;
+ font-style: normal;
+ font-size: 48px;  /* Preferred icon size */
+ display: inline-block;
+ line-height: 1;
+ text-transform: none;
+ letter-spacing: normal;
+ word-wrap: normal;
+ white-space: nowrap;
+ direction: ltr;
+
+ /* Support for all WebKit browsers. */
+ -webkit-font-smoothing: antialiased;
+
+ /* Support for Safari and Chrome. */
+ text-rendering: optimizeLegibility;
+
+ /* Support for Firefox. */
+ -moz-osx-font-smoothing: grayscale;
+
+ /* Support for IE. */
+ font-feature-settings: 'liga';
+ }
