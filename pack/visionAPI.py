@@ -48,4 +48,4 @@ def detect_text(path):
     tts_2.save(base_url + "text.mp3")
 
 
-    return text_list
+    return text_list[0]

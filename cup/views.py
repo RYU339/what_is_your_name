@@ -43,7 +43,7 @@ def pred_img(request):
     ))
     # hover
     TOOLTIPS = [
-        ("Beverage", "@rank"),
+        ("Name", "@rank"),
         ("Predict value", "@rank_value{0.2f} %"),
     ]
 

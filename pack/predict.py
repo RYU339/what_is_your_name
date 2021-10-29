@@ -30,7 +30,7 @@ def predict_image(path):
     3 drinking strawberry
     4 honeymilk choco
     5 honeymilk strawberry
-    6 hush
+    6 hershey
     7 juicy
     8 mae il
     9 seoul choco
@@ -38,7 +38,7 @@ def predict_image(path):
     11 seoul strawberry
     '''
     target_names = np.array(['almond', 'drinking berrymix', 'drinking plain', 'drinking strawberry',
-                             'honeymilk choco', 'honeymilk strawberry', 'hush', 'juicy',
+                             'honeymilk choco', 'honeymilk strawberry', 'hershey', 'juicy',
                              'mae il', 'seoul choco', 'seoul coffee', 'seoul strawberry'])
     
     # get index number(max)

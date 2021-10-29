@@ -2,12 +2,20 @@
 {% load static %}
 
 {% block content %}
+    <style>
+        .a i {
+            font-size: 4rem;
+        }
+    </style>
+
 <form action="{% url 'pack:pred_img' %}" method="POST" enctype="multipart/form-data"  onsubmit="return file_check()">
   {% csrf_token %}
   <div class="upload">
     <!-- image upload -->
     <label for="input_img">
-        <i class="material-icons">upload_file</i>
+        <div class="a">
+            <i class="material-icons">upload_file</i>
+        </div>
     </label>
     <input type="file" id="input_img" name="img_uploaded" accept="image/*" onchange="setThumbnail(event);">
     <!-- image preview -->
@@ -43,7 +51,9 @@
 
     <!-- Predict -->
     <p>선택한 이미지가 맞다면 로봇을 눌러주세요</p>
-    <button class="submit_btn" type="submit"><i class="material-icons">smart_toy</i></button>
+      <div class="a">
+          <button class="submit_btn" type="submit"><i class="material-icons-outlined">smart_toy</i></button>
+      </div>
   </div>
 </form>
 {% endblock %}

@@ -195,7 +195,7 @@ body {
 /* 이미지 업로드 */
 .upload {
     display: block;
-    padding: 0 20px;
+    padding: 0 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,30 +298,3 @@ body {
     height: 50px;
     padding: 15px;
 }
-
-/* meterial_icon */
-.material-icons {
- font-family: 'Material Icons';
- font-weight: normal;
- font-style: normal;
- font-size: 48px;  /* Preferred icon size */
- display: inline-block;
- line-height: 1;
- text-transform: none;
- letter-spacing: normal;
- word-wrap: normal;
- white-space: nowrap;
- direction: ltr;
-
- /* Support for all WebKit browsers. */
- -webkit-font-smoothing: antialiased;
-
- /* Support for Safari and Chrome. */
- text-rendering: optimizeLegibility;
-
- /* Support for Firefox. */
- -moz-osx-font-smoothing: grayscale;
-
- /* Support for IE. */
- font-feature-settings: 'liga';
- }

@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block content %}
+    <style>
+        .a i {
+            font-size: 4rem;
+        }
+        .b i {
+            font-size: 2.5rem;
+        }
+    </style>
+
 <div class="result">
   <div class="result_img">
     {% if uploaded_file_url %}
@@ -11,7 +20,11 @@
   </div>
   <!-- 이미지 이름, 확률값 출력 -->
   <div class="result_value">
-    <p><h3>{{ result_name }}</h3></t><i id="img" class="material-icons">campaign</i>
+    <p><h3>{{ result_name }}</h3></t>
+      <div class="b">
+{#          <i id="img" class="material-icons">campaign</i>#}
+          <i id="img" class="material-icons-outlined">campaign</i>
+      </div>
     <p><a class="detect_link" href="{% url 'can:detect_img_text' file_name=uploaded_file_name %}">
         상품 정보 읽기</a>
     </p>
@@ -25,9 +38,10 @@
 </div>
 
 <!-- 데이터 삭제 -->
-<div class="del_data">
+<div class="a">
   <a href="{% url 'can:delete' file_name=uploaded_file_name %}" onclick='alert("데이터가 삭제되었습니다.");'>
-      <i class="material-icons">delete</i>
+      <i class="material-icons-outlined">delete</i>
+{#      <i class="material-icons">delete</i>#}
   </a>
 </div>
 
