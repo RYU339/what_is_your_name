@@ -24,22 +24,40 @@ def predict_image(path):
 
     # image labeling
     '''
-    0 almond
-    1 drinking berrymix
-    2 drinking plain
-    3 drinking strawberry
-    4 honeymilk choco
-    5 honeymilk strawberry
-    6 hershey
-    7 juicy
-    8 mae il
-    9 seoul choco
-    10 seoul coffee
-    11 seoul strawberry
+    0 아몬드 브리즈
+    1 덴마크 드링킹 베리믹스
+    2 덴마크 드링킹 플레인
+    3 덴마크 드링킹 딸기
+    4 꿀딴지 초코
+    5 꿀딴지 딸기
+    6 허쉬
+    7 쥬시쿨
+    8 매일우유
+    9 서울우유 초코
+    10 서울우유 커피
+    11 서울우유 딸기
     '''
-    target_names = np.array(['almond', 'drinking berrymix', 'drinking plain', 'drinking strawberry',
-                             'honeymilk choco', 'honeymilk strawberry', 'hershey', 'juicy',
-                             'mae il', 'seoul choco', 'seoul coffee', 'seoul strawberry'])
+    target_names = np.array(['아몬드 브리즈', '덴마크 드링킹 베리믹스', '덴마크 드링킹 플레인', '덴마크 드링킹 딸기', '꿀딴지 초코',
+                             '꿀딴지 딸기', '허쉬', '쥬시쿨', '매일우유', '서울우유 초코', '서울우유 커피', '서울우유 딸기'])
+
+    # # image labeling
+    # '''
+    # 0 almond
+    # 1 drinking berrymix
+    # 2 drinking plain
+    # 3 drinking strawberry
+    # 4 honeymilk choco
+    # 5 honeymilk strawberry
+    # 6 hershey
+    # 7 juicy
+    # 8 mae il
+    # 9 seoul choco
+    # 10 seoul coffee
+    # 11 seoul strawberry
+    # '''
+    # target_names = np.array(['almond', 'drinking berrymix', 'drinking plain', 'drinking strawberry',
+    #                          'honeymilk choco', 'honeymilk strawberry', 'hershey', 'juicy',
+    #                          'mae il', 'seoul choco', 'seoul coffee', 'seoul strawberry'])
     
     # get index number(max)
     result = np.argmax(model.predict(data))
