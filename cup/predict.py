@@ -24,21 +24,38 @@ def predict_image(path):
 
     # image labeling
     '''
-    0 bul dak
-    1 cham kkae
-    2 cheese
-    3 jin hot
-    4 jin sun
-    5 neo gu ri
-    6 sa ri
-    7 sae u tang
-    8 snack
-    9 woo dong
-    10 yeul
-    11 yuk gae jang
+    0 불닭볶음면
+    1 참깨라면
+    2 치즈볶이
+    3 진라면 매운맛
+    4 진라면 순한맛
+    5 너구리
+    6 사리곰탕
+    7 새우탕
+    8 스낵면
+    9 튀김우동
+    10 열라면
+    11 육개장
     '''
-    target_names = np.array(['bul dak', 'cham kkae', 'cheese', 'jin hot', 'jin sun', 'neo gu ri',
-                             'sa ri', 'sae u tang', 'snack', 'woo dong', 'yeul', 'yuk gae jang'])
+    target_names = np.array(['불닭볶음면', '참깨라면', '치즈볶이', '진라면 매운맛', '진라면 순한맛', '너구리',
+                             '사리곰탕', '새우탕', '스낵면', '튀김우동', '열라면', '육개장'])
+
+    # '''
+    # 0 bul dak
+    # 1 cham kkae
+    # 2 cheese
+    # 3 jin hot
+    # 4 jin sun
+    # 5 neo gu ri
+    # 6 sa ri
+    # 7 sae u tang
+    # 8 snack
+    # 9 woo dong
+    # 10 yeul
+    # 11 yuk gae jang
+    # '''
+    # target_names = np.array(['bul dak', 'cham kkae', 'cheese', 'jin hot', 'jin sun', 'neo gu ri',
+    #                          'sa ri', 'sae u tang', 'snack', 'woo dong', 'yeul', 'yuk gae jang'])
     
     # get index number(max)
     result = np.argmax(model.predict(data))
