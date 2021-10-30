@@ -70,7 +70,7 @@ def predict_image(path):
         # print(rank)
 
     # get image name for audio & save
-    tts = gTTS(text=predict_result, lang='en')
+    tts = gTTS(text=predict_result, lang='ko')
     tts.save(base_url + "result.mp3")
 
     # # check cmd

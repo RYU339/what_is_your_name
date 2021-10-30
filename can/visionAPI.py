@@ -44,7 +44,7 @@ def detect_text(path):
     for text in texts:
         text_list.append(text.description)
 
-    tts_2 = gTTS(text=text_list[0], lang='en')
+    tts_2 = gTTS(text=text_list[0], lang='ko')
     tts_2.save(base_url + "text.mp3")
 
 
